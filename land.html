@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecting Anomalies and Intrusions In Communication</title>
+    <style>
+         @font-face {
+             font-family: 'My';
+             src: url('SFPRODISPLAYREGULAR.OTF') format('opentype');
+             font-weight: normal;
+             font-style: normal;
+         }
+        body, html {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+         .full-page-image {
+            width: 100%;  /* Make the image fit the full width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Removes bottom space */
+        }
+        /* Container for the image and button */
+        .image-container {
+            position: relative; /* Enable positioning for child elements */
+            display: inline-block; /* Keep the container tight around the image */
+        }
+
+        /* Invisible button styling */
+        .invisible-button, .invisible-button2, .invisible-button3 {
+            position: absolute;
+            background-color: transparent; /* Make background invisible */
+            border: none; /* Remove border */
+            width: 245px; /* Set button width */
+            height: 43px; /* Set button height */
+            cursor: pointer; /* Change cursor on hover */
+            border-radius: 10px;
+        }
+        
+        .invisible-button {
+            top: 312px; /* Adjust vertical position */
+            left: 637px; /* Adjust horizontal position */
+        }
+        
+        .invisible-button2 {
+            top: 380px; /* Adjust vertical position */
+            left: 637px; /* Adjust horizontal position */
+        }
+
+        .invisible-button3 {
+            color: white;
+            font-family: 'My', sans-serif;
+            top: 1204px; /* Adjust vertical position */
+            left: 637px; /* Adjust horizontal position */
+        }
+
+        /* Optional: Add hover effect */
+        .invisible-button:hover, .invisible-button2:hover {
+            outline: 2px solid rgba(255, 255, 255, 0.5); /* Optional highlight on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='image/bg.png') }}" alt="Full Page Image" class="full-page-image">
+
+        
+        <!-- Link to the Email Spam Classifier page -->
+        <button class="invisible-button" onclick="window.location.href='{{ url_for('index') }}'"></button>
+        <button class="invisible-button2" onclick="window.location.href='{{ url_for('index') }}'"></button>
+        <button class="invisible-button3" onclick="window.location.href='{{ url_for('index') }}'">© Project By Team16</button>
+        
+        
+        
+    </div>
+</body>
+</html>
