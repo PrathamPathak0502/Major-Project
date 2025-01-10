@@ -1,5 +1,4 @@
-#Major Project
-#Web Application
+Major Project: Web Application
 This web application consists of several HTML pages, CSS styles, and images. Below is an overview of the project structure and how to set up the application.
 
 Project Structure
@@ -86,7 +85,3 @@ Easy to interpret model parameters.
 Challenges:
 Not ideal for highly non-linear relationships.
 May underperform with complex patterns, especially in text-based data.
-
-### Author
-Developed by [Pratham Pathak].
-
